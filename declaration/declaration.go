@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"math/cmplx"
-	"runtime"
+
 )
 
 var (
@@ -15,7 +15,7 @@ var (
 )
 
 func main() {
-
+	v := "yo"
 	k := 3
 	fmt.Println(i, j, k, c, c1)
 
@@ -25,8 +25,9 @@ func main() {
 
 	//Variable Type with %T
 	fmt.Printf("i is of type %T\n", i)
+	fmt.Printf("v is of type %T\n", v)
 
-	
+
 }
  /*
  The zero value is:
