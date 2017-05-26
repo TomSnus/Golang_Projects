@@ -26,7 +26,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	// root
-	http.Handle("/", &templateHandler{filename: "chat.html"})
+	http.Handle("/", &templateHandler{filename: "chattemplate.html"})
 	// start the web server
 	if err := http.ListenAndServe(":8070", nil); err != nil {
 		log.Fatal("ListenAndServe:", err)
